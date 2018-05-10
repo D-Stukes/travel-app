@@ -33,18 +33,32 @@ createUser(user) {
     this.createUser(user);
   }
 
+// findUser(user) {
+//   fetch('/user', {
+//     method: 'POST',
+//     body: JSON.stringify(user),
+//     headers: {
+//         'content-type': 'application/json'
+//       }
+//   })
+// }
+
+  handleSubmit(user) {
+    this.createUser(user);
+  }
+
   render() {
     return (
       <div className="App">
         <Nav />
         <MainView />
         <Route
-          render={() => (<Login onSubmit={this.handleSubmit} />)}
-          exact path="/login"
+          render={() => (<Register onSubmit={this.handleSubmit} />)}
+          exact path="/register"
           />
 
-        <Route exact path="/Register" component={Register} />
-        <Route exact path="/Home" component={Home} data={"test"}/>
+        <Route exact path="/register" component={Register} />
+        <Route exact path="/login" component={Login} />
         <Route exact path='/map' component={MapArea} />
 
     </div>
