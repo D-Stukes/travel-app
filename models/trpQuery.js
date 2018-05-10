@@ -2,7 +2,7 @@ const db = require('../config/connection');
 
 //this will render all users that favorited same location
 function travelersOneDestination(location) {
-  return db.any(`
+  return db.one(`
   SELECT name
   FROM users
   JOIN favorites
@@ -37,7 +37,7 @@ function creatingFavorites(location) {
 // }
 
 // model below begins the users profile
-function creatingUser(user) {
+function creatingUsers(user) {
   return db.one(`
     INSERT INTO users( name, email, hashpassword)
     SET ( $/name/, $/email/, $/hashpassword/)
@@ -46,7 +46,7 @@ function creatingUser(user) {
 //I will also want to create the hard coded destination to render on REACT
 //inside divs the direct the user to that geolocation
  module.exports = {
-   travelerOneDestination,
+   travelersOneDestination,
    allFavDestinationforUser,
    // deetsforPoi
    creatingFavorites,
