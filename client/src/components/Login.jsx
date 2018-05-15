@@ -37,10 +37,10 @@ class Login extends Component {
         {this.state.authenticated && <Redirect to='/'/>};
           <form onSubmit={this.handleSubmit}>
             <h1>Login</h1>
-            <label htmlFor="email"> Email: </label>
+            <label htmlFor="email" className="login-email"> Email: </label>
             <input type="text" value={this.state.email} name="email" onChange={this.handleChange}></input>
 
-            <br/> <label htmlFor="password"> Password: </label>
+            <br/> <label htmlFor="password" className="login-password"> Password: </label>
             <input type="password" value={this.state.hashpassword} name="hashpassword" onChange={this.handleChange}></input>
 
             <br/><button value="Login">LOGIN</button>
