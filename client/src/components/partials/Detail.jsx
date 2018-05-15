@@ -49,6 +49,7 @@ class Detail extends Component {
       { this.props.info.id === this.props.activeid && (
         <div>
         <h4>Notes</h4>
+        <img src={this.props.info.img_url} alt="a pic"/>
         <textarea type="fave_notes"
           name="fave_notes"
           value={this.state.fave_notes}

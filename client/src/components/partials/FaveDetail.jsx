@@ -60,7 +60,7 @@ componentDidMount(){
     return (
 
       <div
-        className={ this.props.info.favoritesid
+        className="fav-pic" className={ this.props.info.favoritesid
           ? 'destinationDivBox is-active' : 'destinationDivBox not-active' }
         key={this.props.info.favoritesid}
         id={this.props.info.favoritesid}
@@ -82,7 +82,7 @@ componentDidMount(){
         <br/>
         <br/>
         { this.props.info.favoritesid &&
-          <button onClick={this.deleteFave} className="add-fav" type="submit">
+          <button onClick={this.deleteFave} className="delete-fav" type="submit">
             Delete
           </button>
           }

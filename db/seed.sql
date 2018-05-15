@@ -41,6 +41,7 @@ VALUES
 ('Germany', 'Much history and many places of beauty.',49.3987524,8.672433500000011, './germany1.jpeg'),
 ('Japan', 'This place is rich with culture and music. They are very skilled in the arts!',358.5541934,-134.47699309999996, './japan1.jpeg'),
 ('Alaska', 'So cold yet so lovely!',64.2008413,-149.4936733, './alaska1.jpeg');
+('Puerto Rico', 'A land of beauty, music, life and color',18.3767257,-65.8412017, './puertorico1.jpeg');
 
 -- favorites
 INSERT INTO favorites
