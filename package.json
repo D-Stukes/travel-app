@@ -13,16 +13,8 @@
     "start-client": "cd client && npm start",
     "heroku-postbuild": "cd client && npm i && npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aj812/travel-app.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/aj812/travel-app/issues"
-  },
-  "homepage": "https://github.com/aj812/travel-app#readme",
   "dependencies": {
     "bcrypt": "^2.0.1",
     "body-parser": "^1.18.2",
