@@ -14,7 +14,7 @@
 ![project3 code snippet](https://user-images.githubusercontent.com/36650186/40204643-3e8fbf6e-59f7-11e8-838c-9596c9990f25.png)
 
 ### Landing Page
-##### Login screen, skip or enter as Guest option
+#### Login screen, skip or enter as Guest option
 
 ### Other Views
 ###  Search Page 
